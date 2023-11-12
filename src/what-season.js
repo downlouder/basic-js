@@ -12,6 +12,7 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function getSeason(date) {
+  throw new NotImplementedError('Not implemented');
   const arr = [
     "winter",
     "winter",
@@ -35,7 +36,7 @@ function getSeason(date) {
     !isNaN(date)
   )
     return arr[date.getMonth()];
-  throw Error("Invalid date!");
+  throw new Error("Invalid date!");
 }
 
 module.exports = {
